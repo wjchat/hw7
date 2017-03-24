@@ -172,7 +172,7 @@ first_rt = first_rt[2:-2]
 # If you want to challenge yourself here -- this function definition (what goes under the def statement) CAN be written in one line! Definitely, definitely fine to write it with multiple lines, too, which will be much easier and clearer.
 
 def get_twitter_users(tweet):
-	users = re.findall('@\w+', tweet)
+	users = re.findall('@(\w+)', tweet)
 	users_final = {(user) for user in users}
 	return users_final
 
